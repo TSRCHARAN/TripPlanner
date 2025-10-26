@@ -1,0 +1,2152 @@
+[
+  {
+    "name": "Addanki Bus Depot, Andhra Pradesh",
+    "latitude": 15.8148706,
+    "longitude": 79.9714467,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Addanki, Andhra Pradesh 523201, India"
+  },
+  {
+    "name": "Adoni Bus Depot, Andhra Pradesh",
+    "latitude": 15.6318824,
+    "longitude": 77.27588329999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Adoni, Andhra Pradesh, India"
+  },
+  {
+    "name": "Alipiri Bus Depot, Andhra Pradesh",
+    "latitude": 13.6466048,
+    "longitude": 79.4078419,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "JCW5+J4W, Alipiri Old Checkpoint Rd, Alipiri Gate, Dwaraka Nagar, Tirupati, Andhra Pradesh 517507, India"
+  },
+  {
+    "name": "Allagadda Bus Depot, Andhra Pradesh",
+    "latitude": 15.1305389,
+    "longitude": 78.5127559,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Allagadda, Andhra Pradesh 518543, India"
+  },
+  {
+    "name": "Amalapuram Bus Depot, Andhra Pradesh",
+    "latitude": 16.5798313,
+    "longitude": 81.9977665,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Unnamed Road, HXHX+W4J, Karrivani Revu, Amalapuram, Andhra Pradesh 533201, India"
+  },
+  {
+    "name": "Anakapalli Bus Depot, Andhra Pradesh",
+    "latitude": 17.6896435,
+    "longitude": 83.0023634,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Anakapalle, Andhra Pradesh, India"
+  },
+  {
+    "name": "Anantapur Bus Depot, Andhra Pradesh",
+    "latitude": 14.6824455,
+    "longitude": 77.6017089,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Anantapur, Andhra Pradesh, India"
+  },
+  {
+    "name": "Atmakur (K) Bus Depot, Andhra Pradesh",
+    "latitude": 15.8790866,
+    "longitude": 78.58373069999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Atmakur, Andhra Pradesh 518422, India"
+  },
+  {
+    "name": "Atmakur (N) Bus Depot, Andhra Pradesh",
+    "latitude": 15.8790866,
+    "longitude": 78.58373069999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Atmakur, Andhra Pradesh 518422, India"
+  },
+  {
+    "name": "Badvel Bus Depot, Andhra Pradesh",
+    "latitude": 14.7304949,
+    "longitude": 79.05974049999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Badvel, Andhra Pradesh, India"
+  },
+  {
+    "name": "Bapatla Bus Depot, Andhra Pradesh",
+    "latitude": 15.9050643,
+    "longitude": 80.4714947,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "7-3-5, Yadava Palam, bhimavaripalem, Satyannarayana Puram, Bapatla, Andhra Pradesh 522101, India"
+  },
+  {
+    "name": "Bhimavaram Bus Depot, Andhra Pradesh",
+    "latitude": 16.5480822,
+    "longitude": 81.54130150000002,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Bhimavaram Bus Depot, Mentay Vari Thota, Bhimavaram, Andhra Pradesh 534210, India"
+  },
+  {
+    "name": "Chilakaluripet Bus Depot, Andhra Pradesh",
+    "latitude": 16.0976324,
+    "longitude": 80.1694541,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Bus Depot Rd, CR Colony, Chilakaluripet, Andhra Pradesh 522616, India"
+  },
+  {
+    "name": "Chittoor Bus Depot, Andhra Pradesh",
+    "latitude": 13.217176,
+    "longitude": 79.1003289,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Chittoor, Andhra Pradesh, India"
+  },
+  {
+    "name": "Chodavaram Bus Depot, Andhra Pradesh",
+    "latitude": 17.8277288,
+    "longitude": 82.93445229999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Chodavaram, Andhra Pradesh 531036, India"
+  },
+  {
+    "name": "Cumbum Bus Depot, Andhra Pradesh",
+    "latitude": 15.5795226,
+    "longitude": 79.1098015,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Cumbum, Andhra Pradesh 523333, India"
+  },
+  {
+    "name": "Dharmavaram Bus Depot, Andhra Pradesh",
+    "latitude": 14.4124551,
+    "longitude": 77.7201031,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Dharmavaram, Andhra Pradesh, India"
+  },
+  {
+    "name": "Dornakal Bus Depot, Andhra Pradesh",
+    "latitude": 15.9128998,
+    "longitude": 79.7399875,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Andhra Pradesh, India"
+  },
+  {
+    "name": "Dornala Bus Depot, Andhra Pradesh",
+    "latitude": 15.9072455,
+    "longitude": 79.0955723,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Doranala, Ayinamukkala, Andhra Pradesh 523331, India"
+  },
+  {
+    "name": "Eluru Bus Depot, Andhra Pradesh",
+    "latitude": 16.70726,
+    "longitude": 81.08982,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Eluru, Narasimharao Pet, Eluru, Andhra Pradesh 534006, India"
+  },
+  {
+    "name": "Giddalur Bus Depot, Andhra Pradesh",
+    "latitude": 15.3757808,
+    "longitude": 78.9236355,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Giddalur, Andhra Pradesh 523357, India"
+  },
+  {
+    "name": "Gooty Bus Depot, Andhra Pradesh",
+    "latitude": 15.1220053,
+    "longitude": 77.634687,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Gooty, Andhra Pradesh, India"
+  },
+  {
+    "name": "Gudivada Bus Depot, Andhra Pradesh",
+    "latitude": 16.4310212,
+    "longitude": 80.9971474,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "CXJW+CV2, Gudivada Kankipadu Rd, Satyanarayana Puram, Gudivada, Andhra Pradesh 521301, India"
+  },
+  {
+    "name": "Gudur Bus Depot, Andhra Pradesh",
+    "latitude": 14.1463424,
+    "longitude": 79.85038089999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Gudur, Andhra Pradesh, India"
+  },
+  {
+    "name": "Guntakal Bus Depot, Andhra Pradesh",
+    "latitude": 15.1660706,
+    "longitude": 77.3769836,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Guntakal, Andhra Pradesh, India"
+  },
+  {
+    "name": "Guntur-1 Bus Depot, Andhra Pradesh",
+    "latitude": 16.2920746,
+    "longitude": 80.4523767,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "1st Line, Lalapet, Guntur, Andhra Pradesh 522003, India"
+  },
+  {
+    "name": "Guntur-2 Bus Depot, Andhra Pradesh",
+    "latitude": 16.2920663,
+    "longitude": 80.4521504,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "2nd Line, Lalapet, Guntur, Andhra Pradesh 522003, India"
+  },
+  {
+    "name": "Hindupur Bus Depot, Andhra Pradesh",
+    "latitude": 13.8222599,
+    "longitude": 77.5009298,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Hindupuram, Andhra Pradesh, India"
+  },
+  {
+    "name": "Idupulapaya Bus Depot, Andhra Pradesh",
+    "latitude": 14.3403255,
+    "longitude": 78.4958527,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Idupulapaya, Andhra Pradesh, India"
+  },
+  {
+    "name": "Jaggayyapeta Bus Depot, Andhra Pradesh",
+    "latitude": 16.8974142,
+    "longitude": 80.100805,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Bus Depot, Jaggaiahpet, Andhra Pradesh 521175, India"
+  },
+  {
+    "name": "Jammalamadugu Bus Depot, Andhra Pradesh",
+    "latitude": 14.842096,
+    "longitude": 78.38681299999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "R9RP+RPP, Kadapa SH-57, Jammalamadugu, Andhra Pradesh 516434, India"
+  },
+  {
+    "name": "Kadapa Bus Depot, Andhra Pradesh",
+    "latitude": 14.4673154,
+    "longitude": 78.8242089,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Kadapa, Andhra Pradesh, India"
+  },
+  {
+    "name": "Kakinada Bus Depot, Andhra Pradesh",
+    "latitude": 16.9657409,
+    "longitude": 82.2393886,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "X68Q+7QR, Burma Colony, Kakinada, Andhra Pradesh 533003, India"
+  },
+  {
+    "name": "Kalyandurg Bus Depot, Andhra Pradesh",
+    "latitude": 14.5519565,
+    "longitude": 77.1107476,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Kalyandurg, Andhra Pradesh 515761, India"
+  },
+  {
+    "name": "Kavali Bus Depot, Andhra Pradesh",
+    "latitude": 14.9106258,
+    "longitude": 79.9930229,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "WX6V+762, Vaddi Palem, Kavali, Andhra Pradesh 524201, India"
+  },
+  {
+    "name": "Kodur Bus Depot, Andhra Pradesh",
+    "latitude": 13.9597733,
+    "longitude": 79.3499861,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Koduru, Andhra Pradesh 516101, India"
+  },
+  {
+    "name": "Koilakuntla Bus Depot, Andhra Pradesh",
+    "latitude": 15.2291214,
+    "longitude": 78.313226,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Koilakuntla Bus Depot Rd, Koilkuntla, Andhra Pradesh 518134, India"
+  },
+  {
+    "name": "Kovvur Bus Depot, Andhra Pradesh",
+    "latitude": 17.0171224,
+    "longitude": 81.7275418,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Kovvur Bus Depot, Kovvur, Andhra Pradesh 534350, India"
+  },
+  {
+    "name": "Kuppam Bus Depot, Andhra Pradesh",
+    "latitude": 12.748469,
+    "longitude": 78.345964,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Chittoor, NH-219, Krishnagiri Palamaner Highway, Chittoor, Chittoor, Kuppam, Andhra Pradesh 517425, India"
+  },
+  {
+    "name": "Kurnool-1 Bus Depot, Andhra Pradesh",
+    "latitude": 15.7858892,
+    "longitude": 78.0328492,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "1, Kurnool, Andhra Pradesh 518002, India"
+  },
+  {
+    "name": "Kurnool-2 Bus Depot, Andhra Pradesh",
+    "latitude": 15.8150923,
+    "longitude": 78.0326096,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "2, Sampath Nagar, Kurnool, Andhra Pradesh 518003, India"
+  },
+  {
+    "name": "Macharla Bus Depot, Andhra Pradesh",
+    "latitude": 16.474673,
+    "longitude": 79.42345499999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "APSRTC Macherla Bus Depot, NH-565, Sagar Road, Macherla, Guntur, Macherla, Andhra Pradesh 522426, India"
+  },
+  {
+    "name": "Machilipatnam Bus Depot, Andhra Pradesh",
+    "latitude": 16.1883465,
+    "longitude": 81.1365075,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "54QP+8XJ Rtc, Bus stand, Edepalli, Srinivas Nagar Colony, Machilipatnam, Andhra Pradesh 521001, India"
+  },
+  {
+    "name": "Madanapalle-1 Bus Depot, Andhra Pradesh",
+    "latitude": 13.5716437,
+    "longitude": 78.51624509999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "1, Kammapalle, Madanapalle, Andhra Pradesh 517325, India"
+  },
+  {
+    "name": "Madanapalle-2 Bus Depot, Andhra Pradesh",
+    "latitude": 13.5720162,
+    "longitude": 78.6686162,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "2-78282, Madanapalle, NImmanapalli, Andhra Pradesh 517280, India"
+  },
+  {
+    "name": "Madhurawada Bus Depot, Andhra Pradesh",
+    "latitude": 17.8067534,
+    "longitude": 83.3658999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "APSRTC Bus Depot, APHB Layout, Near Patha Madhurawada, Mithilapuri Colony, Srinivasa Nagar, Madhurawada, Visakhapatnam, Andhra Pradesh 530041, India"
+  },
+  {
+    "name": "Maddilapalem Bus Depot, Andhra Pradesh",
+    "latitude": 17.7364372,
+    "longitude": 83.3195876,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Maddilapalem Bus Depot Rd, Maddilapalem, Visakhapatnam, Andhra Pradesh 530013, India"
+  },
+  {
+    "name": "Madakasira Bus Depot, Andhra Pradesh",
+    "latitude": 13.94083,
+    "longitude": 77.27544259999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Madakasira, Andhra Pradesh 515301, India"
+  },
+  {
+    "name": "Mangalagiri Bus Depot, Andhra Pradesh",
+    "latitude": 16.4251871,
+    "longitude": 80.5587752,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Mangalagiri Bus Depot, 7-319D, Rajiv Swagruha Kalpa Rd, New Bank Colony, Autonagar, Mangalagiri, Andhra Pradesh 522503, India"
+  },
+  {
+    "name": "Mangalam Bus Depot, Andhra Pradesh",
+    "latitude": 13.6561979,
+    "longitude": 79.4689346,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "APSRTC Mangalam Depot, Mangalam, Tirupati, Andhra Pradesh 517509, India"
+  },
+  {
+    "name": "Markapur Bus Depot, Andhra Pradesh",
+    "latitude": 15.7460593,
+    "longitude": 79.2752023,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Markapur Bus Depot Rd, Jawahar Nagar Colony, Markapur, Andhra Pradesh 523316, India"
+  },
+  {
+    "name": "Miryalguda Bus Depot, Andhra Pradesh",
+    "latitude": 15.9128998,
+    "longitude": 79.7399875,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Andhra Pradesh, India"
+  },
+  {
+    "name": "Mylavaram Bus Depot, Andhra Pradesh",
+    "latitude": 16.7560489,
+    "longitude": 80.6414006,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Mylavaram, Andhra Pradesh 521230, India"
+  },
+  {
+    "name": "Mydukur Bus Depot, Andhra Pradesh",
+    "latitude": 14.7244559,
+    "longitude": 78.7309621,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Mydukur Bus Depot Rd, S.Mydukur, Andhra Pradesh 516172, India"
+  },
+  {
+    "name": "Nadikudi Bus Depot, Andhra Pradesh",
+    "latitude": 16.5879495,
+    "longitude": 79.7068596,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Nadikudi, Andhra Pradesh 522414, India"
+  },
+  {
+    "name": "Nandikotkur Bus Depot, Andhra Pradesh",
+    "latitude": 15.8555909,
+    "longitude": 78.2649533,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Nandikotkur, Andhra Pradesh 518401, India"
+  },
+  {
+    "name": "Nandyal Bus Depot, Andhra Pradesh",
+    "latitude": 15.490146,
+    "longitude": 78.4796344,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Nandyal Bus Station, Nandyal Bus Stand Rd, Arundhi Nagar, Telugu Peta, Nandyala, Andhra Pradesh 518501, India"
+  },
+  {
+    "name": "Narsapur Bus Depot, Andhra Pradesh",
+    "latitude": 16.4406028,
+    "longitude": 81.70227589999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Narsapur Bus Depot, NH 216, Narsapur, Andhra Pradesh 534275, India"
+  },
+  {
+    "name": "Narsaraopet Bus Depot, Andhra Pradesh",
+    "latitude": 16.2359181,
+    "longitude": 80.04964989999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Narasaraopeta, Andhra Pradesh, India"
+  },
+  {
+    "name": "Narsipatnam Bus Depot, Andhra Pradesh",
+    "latitude": 17.6627435,
+    "longitude": 82.6150827,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Narsipatnam Bus Depot, Narsipatnam, Andhra Pradesh 531116, India"
+  },
+  {
+    "name": "Nellore-1 Bus Depot, Andhra Pradesh",
+    "latitude": 14.4425987,
+    "longitude": 79.98645599999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Nellore, Andhra Pradesh, India"
+  },
+  {
+    "name": "Nellore-2 Bus Depot, Andhra Pradesh",
+    "latitude": 14.4425987,
+    "longitude": 79.98645599999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Nellore, Andhra Pradesh, India"
+  },
+  {
+    "name": "Nidadavolu Bus Depot, Andhra Pradesh",
+    "latitude": 16.9010253,
+    "longitude": 81.67345809999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Nidadavolu Bus Depot, Nidadavole, Andhra Pradesh 534301, India"
+  },
+  {
+    "name": "Nuzvid Bus Depot, Andhra Pradesh",
+    "latitude": 16.781107,
+    "longitude": 80.8480313,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Nuzvid Bus Depot Rd, Ramanagaram, Nuzividu, Andhra Pradesh 521201, India"
+  },
+  {
+    "name": "Ongole Bus Depot, Andhra Pradesh",
+    "latitude": 15.5057232,
+    "longitude": 80.049922,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Ongole, Andhra Pradesh, India"
+  },
+  {
+    "name": "Paderu Bus Depot, Andhra Pradesh",
+    "latitude": 18.0802006,
+    "longitude": 82.66380199999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Paderu, Andhra Pradesh 531024, India"
+  },
+  {
+    "name": "Palakol Bus Depot, Andhra Pradesh",
+    "latitude": 16.5179401,
+    "longitude": 81.72534739999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Palakollu, Andhra Pradesh, India"
+  },
+  {
+    "name": "Palakonda Bus Depot, Andhra Pradesh",
+    "latitude": 18.5960512,
+    "longitude": 83.7707011,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Palakonda Bus Depot, Palakonda, Vadama, Andhra Pradesh 532440, India"
+  },
+  {
+    "name": "Palamaneru Bus Depot, Andhra Pradesh",
+    "latitude": 13.2008143,
+    "longitude": 78.7440118,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Palamaner, Andhra Pradesh 517408, India"
+  },
+  {
+    "name": "Palasa Bus Depot, Andhra Pradesh",
+    "latitude": 18.7723549,
+    "longitude": 84.4109252,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Palasa, Andhra Pradesh, India"
+  },
+  {
+    "name": "Parvathipuram Bus Depot, Andhra Pradesh",
+    "latitude": 18.7829598,
+    "longitude": 83.4300877,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Parvathipuram, Andhra Pradesh, India"
+  },
+  {
+    "name": "Pattikonda Bus Depot, Andhra Pradesh",
+    "latitude": 15.3963743,
+    "longitude": 77.5007739,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Pattikonda, Andhra Pradesh 518380, India"
+  },
+  {
+    "name": "Penukonda Bus Depot, Andhra Pradesh",
+    "latitude": 14.0849002,
+    "longitude": 77.5970586,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Penukonda, Andhra Pradesh 515110, India"
+  },
+  {
+    "name": "Pileru Bus Depot, Andhra Pradesh",
+    "latitude": 13.6535699,
+    "longitude": 78.94685539999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Pileru Bus Depot, Yellamandha Cross, Pileru, Andhra Pradesh 517214, India"
+  },
+  {
+    "name": "Piduguralla Bus Depot, Andhra Pradesh",
+    "latitude": 16.4819001,
+    "longitude": 79.8776144,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Piduguralla, Andhra Pradesh 522413, India"
+  },
+  {
+    "name": "Podili Bus Depot, Andhra Pradesh",
+    "latitude": 15.6024213,
+    "longitude": 79.6065601,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "JJ23+MWX Bus stand, V.N. Puram, Podili, Andhra Pradesh 523240, India"
+  },
+  {
+    "name": "Ponnur Bus Depot, Andhra Pradesh",
+    "latitude": 16.0685692,
+    "longitude": 80.5482363,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Ponnur, Andhra Pradesh 522124, India"
+  },
+  {
+    "name": "Proddatur Bus Depot, Andhra Pradesh",
+    "latitude": 14.752624,
+    "longitude": 78.5541053,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Proddatur, Andhra Pradesh, India"
+  },
+  {
+    "name": "Pulivendula Bus Depot, Andhra Pradesh",
+    "latitude": 14.4225713,
+    "longitude": 78.2266618,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Pulivendula, Andhra Pradesh, India"
+  },
+  {
+    "name": "Punganur Bus Depot, Andhra Pradesh",
+    "latitude": 13.3663043,
+    "longitude": 78.5641261,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Punganur Bus Depot Rd, Punganur, Andhra Pradesh 517247, India"
+  },
+  {
+    "name": "Puttaparthi Bus Depot, Andhra Pradesh",
+    "latitude": 14.1536375,
+    "longitude": 77.81172040000001,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Puttaparthi Bus Depot, Puttaparthi, Andhra Pradesh 515134, India"
+  },
+  {
+    "name": "Puttur Bus Depot, Andhra Pradesh",
+    "latitude": 13.4381376,
+    "longitude": 79.5521971,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Puttur, Andhra Pradesh 517583, India"
+  },
+  {
+    "name": "Rajahmundry Bus Depot, Andhra Pradesh",
+    "latitude": 17.0005383,
+    "longitude": 81.8040345,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Rajamahendravaram, Andhra Pradesh, India"
+  },
+  {
+    "name": "Rajampet Bus Depot, Andhra Pradesh",
+    "latitude": 14.1969204,
+    "longitude": 79.1554591,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Rajampet, Andhra Pradesh, India"
+  },
+  {
+    "name": "Rajolu Bus Depot, Andhra Pradesh",
+    "latitude": 16.478491,
+    "longitude": 81.84071759999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Razole, Andhra Pradesh 533242, India"
+  },
+  {
+    "name": "Ramachandrapuram Bus Depot, Andhra Pradesh",
+    "latitude": 16.8361208,
+    "longitude": 82.0358358,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "R2PP+PWH, Kakinada - Ramachandrapuram Rd, Ramachandrapuram, Andhra Pradesh 533255, India"
+  },
+  {
+    "name": "Rapur Bus Depot, Andhra Pradesh",
+    "latitude": 14.1998609,
+    "longitude": 79.5343786,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Rapur, Andhra Pradesh 524408, India"
+  },
+  {
+    "name": "Ravulapalem Bus Depot, Andhra Pradesh",
+    "latitude": 16.7614963,
+    "longitude": 81.8420874,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "QR6R+HRW, Ravulapalem, Andhra Pradesh 533238, India"
+  },
+  {
+    "name": "Rayachoti Bus Depot, Andhra Pradesh",
+    "latitude": 14.0586263,
+    "longitude": 78.7519382,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Rayachoty, Andhra Pradesh, India"
+  },
+  {
+    "name": "Rayadurg Bus Depot, Andhra Pradesh",
+    "latitude": 14.7005847,
+    "longitude": 76.8500725,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Rayadurgam, Andhra Pradesh, India"
+  },
+  {
+    "name": "Repalle Bus Depot, Andhra Pradesh",
+    "latitude": 16.0193592,
+    "longitude": 80.8279683,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "2R9H+P5W, Repalle, Andhra Pradesh 522265, India"
+  },
+  {
+    "name": "S. Kota Bus Depot, Andhra Pradesh",
+    "latitude": 18.1111629,
+    "longitude": 83.1394004,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Srungavarapukota, Andhra Pradesh, India"
+  },
+  {
+    "name": "Salur Bus Depot, Andhra Pradesh",
+    "latitude": 18.5169856,
+    "longitude": 83.20394189999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Salur, Andhra Pradesh 535591, India"
+  },
+  {
+    "name": "Sattenapalle Bus Depot, Andhra Pradesh",
+    "latitude": 16.3960329,
+    "longitude": 80.1492601,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Sattenapalle, Andhra Pradesh, India"
+  },
+  {
+    "name": "Satyavedu Bus Depot, Andhra Pradesh",
+    "latitude": 13.4399003,
+    "longitude": 79.9537648,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Bus Depo Rd, Sathyavedu, Andhra Pradesh 517588, India"
+  },
+  {
+    "name": "Singarayakonda Bus Depot, Andhra Pradesh",
+    "latitude": 15.2476081,
+    "longitude": 80.0205089,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Singarayakonda, Andhra Pradesh, India"
+  },
+  {
+    "name": "Simhachalam Bus Depot, Andhra Pradesh",
+    "latitude": 17.7561788,
+    "longitude": 83.2189058,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Simhachalam Bus depot Rd, Prahaladapuram, Simhachalam, Visakhapatnam, Andhra Pradesh 530029, India"
+  },
+  {
+    "name": "Srikakulam-1 Bus Depot, Andhra Pradesh",
+    "latitude": 18.2971506,
+    "longitude": 83.9044172,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "1, Official Colony, Srikakulam, Andhra Pradesh 532001, India"
+  },
+  {
+    "name": "Srikakulam-2 Bus Depot, Andhra Pradesh",
+    "latitude": 18.2936397,
+    "longitude": 83.89423839999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "02, Market Area, Chinna Bharatham Colony, Srikakulam, Andhra Pradesh 532001, India"
+  },
+  {
+    "name": "Srikalahasti Bus Depot, Andhra Pradesh",
+    "latitude": 13.7527145,
+    "longitude": 79.7066722,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Srikalahasti, Andhra Pradesh, India"
+  },
+  {
+    "name": "Srisailam Bus Depot, Andhra Pradesh",
+    "latitude": 16.0737204,
+    "longitude": 78.87520479999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "3VFG+F3P, Srisailam, Andhra Pradesh 518101, India"
+  },
+  {
+    "name": "Sullurupeta Bus Depot, Andhra Pradesh",
+    "latitude": 13.7008756,
+    "longitude": 80.0209065,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Sullurupeta, Andhra Pradesh 524121, India"
+  },
+  {
+    "name": "Tadepalligudem Bus Depot, Andhra Pradesh",
+    "latitude": 16.9491381,
+    "longitude": 81.4087201,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Tadepalligudem Bus Stop, nedavollu road krishnyapalem,, Tadepalligudem, Nallajerla, Andhra Pradesh 534112, India"
+  },
+  {
+    "name": "Tadipatri Bus Depot, Andhra Pradesh",
+    "latitude": 14.9091024,
+    "longitude": 78.0092047,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Tadipatri, Andhra Pradesh, India"
+  },
+  {
+    "name": "Tanuku Bus Depot, Andhra Pradesh",
+    "latitude": 16.7574785,
+    "longitude": 81.6721507,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "QM3C+C86, 1, Society Rd, Pydiparru, Tanuku, Andhra Pradesh 534211, India"
+  },
+  {
+    "name": "Tekkali Bus Depot, Andhra Pradesh",
+    "latitude": 18.6051444,
+    "longitude": 84.2299771,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Tekkali, Andhra Pradesh, India"
+  },
+  {
+    "name": "Tenali Bus Depot, Andhra Pradesh",
+    "latitude": 16.237933,
+    "longitude": 80.6444099,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Tenali, Andhra Pradesh, India"
+  },
+  {
+    "name": "Tirumala Bus Depot, Andhra Pradesh",
+    "latitude": 13.6807357,
+    "longitude": 79.3508975,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Tirumala, Tirupati, Andhra Pradesh, India"
+  },
+  {
+    "name": "Tirupati Bus Depot, Andhra Pradesh",
+    "latitude": 13.6296592,
+    "longitude": 79.4263673,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Tirupati Central Bus Station, Tata Nagar, Tirupati, Andhra Pradesh 517501, India"
+  },
+  {
+    "name": "Tiruvuru Bus Depot, Andhra Pradesh",
+    "latitude": 17.1166048,
+    "longitude": 80.6101617,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Tiruvuru Bus Depot Rd, Kothuru, Tiruvuru, Andhra Pradesh 521235, India"
+  },
+  {
+    "name": "Uravakonda Bus Depot, Andhra Pradesh",
+    "latitude": 14.9441154,
+    "longitude": 77.2577817,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Uravakonda, Andhra Pradesh 515812, India"
+  },
+  {
+    "name": "Vempalli Bus Depot, Andhra Pradesh",
+    "latitude": 14.3642978,
+    "longitude": 78.4557919,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Vempalli, Andhra Pradesh 516329, India"
+  },
+  {
+    "name": "Venkatagiri Bus Depot, Andhra Pradesh",
+    "latitude": 13.9455556,
+    "longitude": 79.5930011,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Venkatagiri Bus Depo, SH 59, Teachers Colony, Kummaragunta, Venkatagiri, Andhra Pradesh 524132, India"
+  },
+  {
+    "name": "Vijayawada-1 Bus Depot, Andhra Pradesh",
+    "latitude": 16.5139607,
+    "longitude": 80.61257069999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "1 Town, Kaleswara Rao Market, Tarapet, Vijayawada, Andhra Pradesh 520001, India"
+  },
+  {
+    "name": "Vijayawada-2 Bus Depot, Andhra Pradesh",
+    "latitude": 16.5027671,
+    "longitude": 80.639623,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "Door No.40, 2-6B, MG Rd, Beside Balaji Towers, Labbipet, Vijayawada, Andhra Pradesh 520010, India"
+  },
+  {
+    "name": "Vijayawada-3 Bus Depot, Andhra Pradesh",
+    "latitude": 16.5061743,
+    "longitude": 80.6480153,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Vijayawada, Andhra Pradesh, India"
+  },
+  {
+    "name": "Vinukonda Bus Depot, Andhra Pradesh",
+    "latitude": 16.0498456,
+    "longitude": 79.7405355,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Vinukonda, Andhra Pradesh 522647, India"
+  },
+  {
+    "name": "Visakhapatnam-1 Bus Depot, Andhra Pradesh",
+    "latitude": 17.6868159,
+    "longitude": 83.2184815,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Visakhapatnam, Andhra Pradesh, India"
+  },
+  {
+    "name": "Visakhapatnam-2 Bus Depot, Andhra Pradesh",
+    "latitude": 17.6868159,
+    "longitude": 83.2184815,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Visakhapatnam, Andhra Pradesh, India"
+  },
+  {
+    "name": "Vizianagaram-1 Bus Depot, Andhra Pradesh",
+    "latitude": 18.101038,
+    "longitude": 83.41216299999999,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "Sarvani Nagar, 1, Shirdi Sai Nagar, Vizianagaram, Jammu Narayana Puram Rural, Andhra Pradesh 535002, India"
+  },
+  {
+    "name": "Vizianagaram-2 Bus Depot, Andhra Pradesh",
+    "latitude": 18.101014,
+    "longitude": 83.412286,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "Sarvani Nagar, 2, Shirdi Sai Nagar, Vizianagaram, Jammu Narayana Puram Rural, Andhra Pradesh 535002, India"
+  },
+  {
+    "name": "Vuyyuru Bus Depot, Andhra Pradesh",
+    "latitude": 16.3598645,
+    "longitude": 80.8522651,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Vuyyuru Bus Depot Rd, Vuyyuru, Andhra Pradesh 521165, India"
+  },
+  {
+    "name": "Yemmiganur Bus Depot, Andhra Pradesh",
+    "latitude": 15.7734175,
+    "longitude": 77.4719551,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Yemmiganur, Andhra Pradesh 518360, India"
+  },
+  {
+    "name": "Yerraguntla Bus Depot, Andhra Pradesh",
+    "latitude": 14.6375051,
+    "longitude": 78.5406992,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Yerraguntla, Andhra Pradesh 516309, India"
+  },
+  {
+    "name": "Yeleswaram Bus Depot, Andhra Pradesh",
+    "latitude": 17.2881415,
+    "longitude": 82.1064293,
+    "type": "depot",
+    "state": "Andhra Pradesh",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Yeleswaram, Andhra Pradesh 533429, India"
+  },
+  {
+    "name": "Achampet Bus Depot, Telangana",
+    "latitude": 16.399471,
+    "longitude": 78.6363621,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Achampet, Telangana 509375, India"
+  },
+  {
+    "name": "Adilabad Bus Depot, Telangana",
+    "latitude": 19.6693521,
+    "longitude": 78.5275231,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "MG9H+P2R, RTC BUS STAND, Vidya Nagar, Adilabad, Telangana 504001, India"
+  },
+  {
+    "name": "Armoor Bus Depot, Telangana",
+    "latitude": 18.7890084,
+    "longitude": 78.2910244,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Vidya Nagar Colony, Mahalaxmi Colony, Armur, Telangana 503224, India"
+  },
+  {
+    "name": "Asifabad Bus Depot, Telangana",
+    "latitude": 19.361899,
+    "longitude": 79.2930312,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "977R+9XR, 4-637, Rahmathnagar, Asifabad, Telangana 504293, India"
+  },
+  {
+    "name": "Bandlaguda Bus Depot, Telangana",
+    "latitude": 17.364618,
+    "longitude": 78.589368,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Bandlaguda Bus Depot, Tirumala Residency Colony, R Krishnaiah Nagar, Hyderabad, Telangana 500068, India"
+  },
+  {
+    "name": "Banswada Bus Depot, Telangana",
+    "latitude": 18.3828118,
+    "longitude": 77.8755182,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Banswada, Telangana 503187, India"
+  },
+  {
+    "name": "Bhainsa Bus Depot, Telangana",
+    "latitude": 19.1009796,
+    "longitude": 77.9613727,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Bhainsa Bus Depot, Kalyan - Ahmednagar Highway, Bhainsa, Telangana 504103, India"
+  },
+  {
+    "name": "Barkatpura Bus Depot, Telangana",
+    "latitude": 17.3925741,
+    "longitude": 78.5010033,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Barkatpura Bus Depot, RTC Colony, Kachiguda, Hyderabad, Telangana 500027, India"
+  },
+  {
+    "name": "BHEL Bus Depot, Telangana",
+    "latitude": 17.5165033,
+    "longitude": 78.2893194,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "BHEL Bus Depot Rd, Ushkebhavi, Ramachandrapuram (BHEL Township), Telangana 502032, India"
+  },
+  {
+    "name": "Bhadradri Bus Depot, Telangana",
+    "latitude": 17.73309,
+    "longitude": 80.7214417,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Bhadradri Kothagudem, Telangana, India"
+  },
+  {
+    "name": "Bhupalapalli Bus Depot, Telangana",
+    "latitude": 18.4292622,
+    "longitude": 79.8634855,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Bhupalpally, Telangana, India"
+  },
+  {
+    "name": "Bodhan Bus Depot, Telangana",
+    "latitude": 18.6588758,
+    "longitude": 77.8944252,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Bodhan Bus Depot, Saraswathi Nagar, Pandu Tarfa (Bodhan Urban), Telangana 503185, India"
+  },
+  {
+    "name": "Chegunta Bus Depot, Telangana",
+    "latitude": 17.9709477,
+    "longitude": 78.4623218,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Chegunta, Telangana, India"
+  },
+  {
+    "name": "Chengicherla Bus Depot, Telangana",
+    "latitude": 17.419266,
+    "longitude": 78.60994579999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Chengicherla Bus Depot, Narepally, Hyderabad, Telangana 500098, India"
+  },
+  {
+    "name": "Chilakaluripet Bus Depot, Telangana",
+    "latitude": 18.1124372,
+    "longitude": 79.01929969999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Telangana, India"
+  },
+  {
+    "name": "Choppadandi Bus Depot, Telangana",
+    "latitude": 18.5845635,
+    "longitude": 79.16696750000001,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Choppadandi, Telangana 505415, India"
+  },
+  {
+    "name": "Devarakonda Bus Depot, Telangana",
+    "latitude": 16.6935395,
+    "longitude": 78.9144321,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Devarakonda, Telangana 508248, India"
+  },
+  {
+    "name": "Dilsukhnagar Bus Depot, Telangana",
+    "latitude": 17.368961,
+    "longitude": 78.5250631,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Dilsukhnagar, AP State Housing Board, Durga Nagar, Krishna Nagar, Dilsukhnagar, Hyderabad, Telangana 500060, India"
+  },
+  {
+    "name": "Dubba Bus Depot, Telangana",
+    "latitude": 18.9565108,
+    "longitude": 78.3617217,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Dubba Rd, Sonpet & Pochampad, Telangana 503219, India"
+  },
+  {
+    "name": "Falaknuma Bus Depot, Telangana",
+    "latitude": 17.3376435,
+    "longitude": 78.4670398,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Falaknuma Bus Depot, Falaknuma Rd, Kalwagadd, Charminar, Falaknuma, Hyderabad, Telangana 500053, India"
+  },
+  {
+    "name": "Farooqnagar Bus Depot, Telangana",
+    "latitude": 17.328829,
+    "longitude": 78.469854,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Farooqnagar Bus Depot, Fatima Nagar, Falaknuma, Hyderabad, Telangana 500053, India"
+  },
+  {
+    "name": "Gadwal Bus Depot, Telangana",
+    "latitude": 16.2360859,
+    "longitude": 77.80345849999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "Bus Station, Krishnaveni Chourastha Roads, Nallakunta, Gadwal, Telangana 509125, India"
+  },
+  {
+    "name": "Gajwel Bus Depot, Telangana",
+    "latitude": 17.837,
+    "longitude": 78.7087,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Pragnapur, Medak, SH-1, Karimnagar Hyderabad, Gajwel, Gajwel, Kyasaram, Telangana 502311, India"
+  },
+  {
+    "name": "Godavarikhani Bus Depot, Telangana",
+    "latitude": 18.762109,
+    "longitude": 79.50684319999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "QG64+RPW, IB Colony, Godavarikhani, Ramagundam, Telangana 505209, India"
+  },
+  {
+    "name": "Hakeempet Bus Depot, Telangana",
+    "latitude": 17.545862,
+    "longitude": 78.535434,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Hakimpet Bus Depot, Hakimpet, Secunderabad, Telangana 500078, India"
+  },
+  {
+    "name": "Hanamkonda Bus Depot, Telangana",
+    "latitude": 18.0035,
+    "longitude": 79.5675436,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Hanamkonda Bus Depot, Vijaya Theater Road, Kakaji Nagar Colony, Hanamkonda, Telangana 506001, India"
+  },
+  {
+    "name": "Hayathnagar Bus Depot, Telangana",
+    "latitude": 17.3270709,
+    "longitude": 78.6053386,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Hayathnagar_Khalsa, Telangana, India"
+  },
+  {
+    "name": "Huzurabad Bus Depot, Telangana",
+    "latitude": 18.1936539,
+    "longitude": 79.39554729999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "59VW+F67, Bus Depot Rd, Vivekananda Nagar, Huzurabad, Telangana 505468, India"
+  },
+  {
+    "name": "Hyderabad Central University Bus Depot, Telangana",
+    "latitude": 17.456737,
+    "longitude": 78.32638759999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "CUC, Central University, Professor CR Rao Rd, P O, Gachibowli, Hyderabad, Telangana 500046, India"
+  },
+  {
+    "name": "Hyderabad-1 Bus Depot, Telangana",
+    "latitude": 17.3932884,
+    "longitude": 78.50106989999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "medium",
+    "raw_status": "OK",
+    "formatted_address": "1, Bus Depo Rd, Ratna Nagar, Kachiguda, Hyderabad, Telangana 500027, India"
+  },
+  {
+    "name": "Hyderabad-2 Bus Depot, Telangana",
+    "latitude": 17.3932884,
+    "longitude": 78.50106989999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "medium",
+    "raw_status": "OK",
+    "formatted_address": "2, Bus Depo Rd, Ratna Nagar, Kachiguda, Hyderabad, Telangana 500027, India"
+  },
+  {
+    "name": "Ibrahimpatnam Bus Depot, Telangana",
+    "latitude": 17.1868,
+    "longitude": 78.6488,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Ibrahimpatnam Bus Depot, Hyderabad-Nagarjuna Sagar Road, Ibrahimpatnam, Telangana 501506, India"
+  },
+  {
+    "name": "Jagityal Bus Depot, Telangana",
+    "latitude": 18.7813821,
+    "longitude": 78.91185519999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Jagitial Bus Depot, Dharoor Camp, Jagtial, Telangana 505455, India"
+  },
+  {
+    "name": "Jangaon Bus Depot, Telangana",
+    "latitude": 17.719993,
+    "longitude": 79.1631168,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "P597+X6X, Ganesh Street, Jangaon, Telangana 506167, India"
+  },
+  {
+    "name": "Jeedimetla Bus Depot, Telangana",
+    "latitude": 17.5278087,
+    "longitude": 78.43992109999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Jeedimetla Bus Depot, Srinivasa Nagar, Suraram, Hyderabad, Telangana 500015, India"
+  },
+  {
+    "name": "Kachiguda Bus Depot, Telangana",
+    "latitude": 17.3900857,
+    "longitude": 78.49333519999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Kachiguda, Hyderabad, Telangana, India"
+  },
+  {
+    "name": "Kalwakurthy Bus Depot, Telangana",
+    "latitude": 16.6643287,
+    "longitude": 78.49170869999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Kalwakurthy, Telangana 509324, India"
+  },
+  {
+    "name": "Kamareddy Bus Depot, Telangana",
+    "latitude": 18.3254644,
+    "longitude": 78.3299923,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Kamareddy Bus Depot, NGOS Colony, Kamareddy, Telangana 503111, India"
+  },
+  {
+    "name": "Karimnagar-1 Bus Depot, Telangana",
+    "latitude": 18.4164969,
+    "longitude": 79.1436638,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "1, Kothirampur, Karimnagar, Telangana 505001, India"
+  },
+  {
+    "name": "Karimnagar-2 Bus Depot, Telangana",
+    "latitude": 18.4517927,
+    "longitude": 79.12012639999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Srr College, 1-2, Chaitanyapuri, Karimnagar, Telangana 505001, India"
+  },
+  {
+    "name": "Khammam Bus Depot, Telangana",
+    "latitude": 17.2563531,
+    "longitude": 80.14163719999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Bus Depot Khammam, Mamillagudaem, Khammam, Telangana 507001, India"
+  },
+  {
+    "name": "Kodad Bus Depot, Telangana",
+    "latitude": 16.9968124,
+    "longitude": 79.9659466,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Kodada, Nayanagar, Kodad, Telangana 508206, India"
+  },
+  {
+    "name": "Kollapur Bus Depot, Telangana",
+    "latitude": 16.1071966,
+    "longitude": 78.31844869999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Kollapur, Telangana 509102, India"
+  },
+  {
+    "name": "Korutla Bus Depot, Telangana",
+    "latitude": 18.8252728,
+    "longitude": 78.7166172,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "Bus Stand, Korutla Main Rd, Korutla, Jagtial, Telangana 505326, India"
+  },
+  {
+    "name": "Kothagudem Bus Depot, Telangana",
+    "latitude": 17.5484829,
+    "longitude": 80.6150318,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "TGRTC Workshop Depot, N.K.Nagar, Writer Basti, Kothagudem, Telangana 507101, India"
+  },
+  {
+    "name": "Kosgi Bus Depot, Telangana",
+    "latitude": 16.9982148,
+    "longitude": 77.7055183,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "XPX4+76, Chennaram, Telangana 509339, India"
+  },
+  {
+    "name": "Kukatpally Bus Depot, Telangana",
+    "latitude": 17.4875418,
+    "longitude": 78.3953462,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Kukatpally, Hyderabad, Telangana, India"
+  },
+  {
+    "name": "Kushaiguda Bus Depot, Telangana",
+    "latitude": 17.4683852,
+    "longitude": 78.5654144,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Kushaiguda Bus Depot, Moula Ali, Secunderabad, Telangana 500040, India"
+  },
+  {
+    "name": "Madhira Bus Depot, Telangana",
+    "latitude": 16.9224323,
+    "longitude": 80.36697509999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Madhira Bus Station, Madhira, Telangana 507203, India"
+  },
+  {
+    "name": "Mahabubabad Bus Depot, Telangana",
+    "latitude": 17.6044733,
+    "longitude": 80.00497879999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Mahabubabad Bus Depot, Mahabubabad, Telangana 506101, India"
+  },
+  {
+    "name": "Mahabubnagar Bus Depot, Telangana",
+    "latitude": 16.7476916,
+    "longitude": 77.9958429,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Palamur Bus stand Rd, Shah Saheb Gutta, Mahbubnagar, Telangana 509001, India"
+  },
+  {
+    "name": "Maheswaram Bus Depot, Telangana",
+    "latitude": 17.1345047,
+    "longitude": 78.4154685,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "4CM8+R54, Maheshwaram, Telangana 501359, India"
+  },
+  {
+    "name": "Mancherial Bus Depot, Telangana",
+    "latitude": 18.8713826,
+    "longitude": 79.4443099,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Mancherial, Telangana, India"
+  },
+  {
+    "name": "Manthani Bus Depot, Telangana",
+    "latitude": 18.6575088,
+    "longitude": 79.6689559,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "Bus Depot, Godavari Road, Manthani, Telangana 505184, India"
+  },
+  {
+    "name": "Manuguru Bus Depot, Telangana",
+    "latitude": 17.9333794,
+    "longitude": 80.8163657,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "WRM8+9G5, Samithisingaram, Ashok Nagar, Manuguru (PT), Telangana 507117, India"
+  },
+  {
+    "name": "Medak Bus Depot, Telangana",
+    "latitude": 18.0507667,
+    "longitude": 78.2698594,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "RTC COMPLEX, Ram Nagar, NEW BUSTAND, Medak, Telangana 502110, India"
+  },
+  {
+    "name": "Medchal Bus Depot, Telangana",
+    "latitude": 17.633733,
+    "longitude": 78.4870581,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Medchal Bus Depot, NH 44, Medchal, Secunderabad, Telangana 501401, India"
+  },
+  {
+    "name": "Mehdipatnam Bus Depot, Telangana",
+    "latitude": 17.3957847,
+    "longitude": 78.4311944,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Mehdipatnam, Hyderabad, Telangana, India"
+  },
+  {
+    "name": "Metpally Bus Depot, Telangana",
+    "latitude": 18.8483453,
+    "longitude": 78.6334258,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Metpally Bus Depot, NH 16, Metpalli, Metpally, Telangana 505325, India"
+  },
+  {
+    "name": "Midhani Bus Depot, Telangana",
+    "latitude": 17.3400138,
+    "longitude": 78.503429,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "MIDHANI BUS STATION, Kanchan Bagh, Hyderabad, Telangana 500058, India"
+  },
+  {
+    "name": "Miryalguda Bus Depot, Telangana",
+    "latitude": 16.8707465,
+    "longitude": 79.5606641,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "Bus Station, Miryalaguda, Telangana 508207, India"
+  },
+  {
+    "name": "Miyapur-1 Bus Depot, Telangana",
+    "latitude": 17.4950236,
+    "longitude": 78.358274,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "1-146, near Bus Stop, Nandini Nagar, Ambedkar Nagar, Hafeezpet, Miyapur, Hyderabad, Telangana 500049, India"
+  },
+  {
+    "name": "Miyapur-2 Bus Depot, Telangana",
+    "latitude": 17.5361703,
+    "longitude": 78.3336102,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "Sri Sai Nilayam, 2, Ameenpur, Miyapur, Telangana 500118, India"
+  },
+  {
+    "name": "Mushirabad-1 Bus Depot, Telangana",
+    "latitude": 17.4197517,
+    "longitude": 78.4961606,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "1, Musheerabad, Bholakpur, Kavadiguda, Hyderabad, Telangana 500080, India"
+  },
+  {
+    "name": "Mushirabad-2 Bus Depot, Telangana",
+    "latitude": 17.4196548,
+    "longitude": 78.4990004,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Musheerabad, Zamistanpur, Hyderabad, Telangana, India"
+  },
+  {
+    "name": "Nagarkurnool Bus Depot, Telangana",
+    "latitude": 16.4829767,
+    "longitude": 78.3246566,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "NagarKurnool Bus Depot, Main Road, SH 20, Nagarkurnool, Telangana 509209, India"
+  },
+  {
+    "name": "Nalgonda Bus Depot, Telangana",
+    "latitude": 17.0577054,
+    "longitude": 79.26836229999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Nalgonda, Telangana, India"
+  },
+  {
+    "name": "Narayanakhed Bus Depot, Telangana",
+    "latitude": 18.0369545,
+    "longitude": 77.7733167,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Narayankhed (CT), Telangana 502286, India"
+  },
+  {
+    "name": "Narayanpet Bus Depot, Telangana",
+    "latitude": 16.7417826,
+    "longitude": 77.4974919,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "PFRX+4VM బస్ స్టేషన్, Narayanpet, Telangana 509210, India"
+  },
+  {
+    "name": "Narketpally Bus Depot, Telangana",
+    "latitude": 17.2040839,
+    "longitude": 79.1964876,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Narketpalle, Telangana 508254, India"
+  },
+  {
+    "name": "Narsampet Bus Depot, Telangana",
+    "latitude": 17.925563,
+    "longitude": 79.8848064,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "WVGM+6WF, Narsampet, Telangana 506132, India"
+  },
+  {
+    "name": "Narsapur Bus Depot, Telangana",
+    "latitude": 17.735275,
+    "longitude": 78.28677239999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "10, Vinayaknagarcolony, Narsapur, Telangana 502313, India"
+  },
+  {
+    "name": "Nirmal Bus Depot, Telangana",
+    "latitude": 19.0907842,
+    "longitude": 78.3454642,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Nirmal Bus Depot, Indira Nagar, Nirmal, Telangana 504106, India"
+  },
+  {
+    "name": "Nizamabad-1 Bus Depot, Telangana",
+    "latitude": 18.6725047,
+    "longitude": 78.09408669999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Nizamabad, Telangana, India"
+  },
+  {
+    "name": "Nizamabad-2 Bus Depot, Telangana",
+    "latitude": 18.6725047,
+    "longitude": 78.09408669999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Nizamabad, Telangana, India"
+  },
+  {
+    "name": "Pargi Bus Depot, Telangana",
+    "latitude": 17.1777454,
+    "longitude": 77.880481,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Rangareddy, SH-4, Parigi Chevella Road, Pargi, Pargi, Telangana 501501, India"
+  },
+  {
+    "name": "Parkal Bus Depot, Telangana",
+    "latitude": 18.1997865,
+    "longitude": 79.6921688,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Parkal Bus Depot, Parkal - Huzurabad Rd, Parkal, Telangana 506164, India"
+  },
+  {
+    "name": "Picket Bus Depot, Telangana",
+    "latitude": 17.4527536,
+    "longitude": 78.498635,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Picket, West Marredpally, Secunderabad, Telangana, India"
+  },
+  {
+    "name": "Rajendranagar Bus Depot, Telangana",
+    "latitude": 17.3342987,
+    "longitude": 78.40874079999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Rajendra Nagar Bus Depot, Budwel, Hyderabad, Telangana 500030, India"
+  },
+  {
+    "name": "Ranigunj-1 Bus Depot, Telangana",
+    "latitude": 17.433264,
+    "longitude": 78.4909392,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "1-502, Victoria Ranigunj, Old Ghasmandi, Rani Gunj, Secunderabad, Telangana 500003, India"
+  },
+  {
+    "name": "Ranigunj-2 Bus Depot, Telangana",
+    "latitude": 17.43961,
+    "longitude": 78.48452,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "2, Jawahar Nagar Colony, Rani Gunj, Hyderabad, Telangana 500003, India"
+  },
+  {
+    "name": "Sangareddy Bus Depot, Telangana",
+    "latitude": 17.6075232,
+    "longitude": 78.0798191,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Sangareddy, Telangana, India"
+  },
+  {
+    "name": "Sattupally Bus Depot, Telangana",
+    "latitude": 17.2113196,
+    "longitude": 80.8298207,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Sattupally Bus Depot, Sathupally, Ayyagaripeta, Telangana 507303, India"
+  },
+  {
+    "name": "Shadnagar Bus Depot, Telangana",
+    "latitude": 17.067577,
+    "longitude": 78.2049153,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "high",
+    "raw_status": "OK",
+    "formatted_address": "padmavathi colony, Bus Station, Jadcherla Rd, Shadnagar, Farooqnagar, Telangana 509216, India"
+  },
+  {
+    "name": "Siddipet Bus Depot, Telangana",
+    "latitude": 18.0937198,
+    "longitude": 78.8530723,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "3VV3+F6P, Housing Board Colony, Siddipet, Telangana 502103, India"
+  },
+  {
+    "name": "Sircilla Bus Depot, Telangana",
+    "latitude": 18.3856417,
+    "longitude": 78.8018072,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "9RP2+7P3, Sircilla, Telangana 505301, India"
+  },
+  {
+    "name": "Suryapet Bus Depot, Telangana",
+    "latitude": 17.1506605,
+    "longitude": 79.62179739999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "1-4-249/52/1 Krishna Nagar Colony Suryapet Bypass Road, Krishna Nagar Colony, Manasa Nagar, Suryapet, Telangana 508213, India"
+  },
+  {
+    "name": "Tandur Bus Depot, Telangana",
+    "latitude": 17.253589,
+    "longitude": 77.59066279999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "7H3R+C7M, Unnamed Road, Venkateshwara Colony, Tandur, Telangana 501141, India"
+  },
+  {
+    "name": "Torrur Bus Depot, Telangana",
+    "latitude": 17.5861211,
+    "longitude": 79.65599519999999,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "HMP4+C9X, Thorrur, Telangana 506163, India"
+  },
+  {
+    "name": "Uppal Bus Depot, Telangana",
+    "latitude": 17.4052964,
+    "longitude": 78.5894181,
+    "type": "depot",
+    "state": "Telangana",
+    "geocode_confidence": "low",
+    "raw_status": "OK",
+    "formatted_address": "Uppal Bus Depot, Hyderabad - Warangal Hwy, Venkateswara Colony, Sai Nagar, Peerzadiguda, Hyderabad, Telangana 500039, India"
+  }
+]
