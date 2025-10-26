@@ -2,6 +2,7 @@ import express from "express";
 //import morgan from "morgan";
 import dotenv from "dotenv";
 import cors from "cors";
+import serverless from "serverless-http";
 dotenv.config();
 import { planTripAuto, planTripWithTransport, getTransportOptions } from "./controllers/tripController.js";
 
@@ -26,4 +27,4 @@ app.get("/", (req, res) => {
   res.send("Sai Ram!");
 });
 
-app.listen(3000, () => console.log("🚀 Travel AI backend running on port 3000"));
+export const handler = serverless(app);
