@@ -22,4 +22,8 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: err.message });
 });
 
+app.get("/", (req, res) => {
+  res.send("Sai Ram!");
+});
+
 app.listen(3000, () => console.log("🚀 Travel AI backend running on port 3000"));
