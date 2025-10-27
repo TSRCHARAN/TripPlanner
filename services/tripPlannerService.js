@@ -51,6 +51,7 @@ export async function planHubActivities(hub, arrivalTime, prefs) {
  */
 export async function planDestinationActivities(dest, prefs) {
   const API_KEY = process.env.GOOGLE_API_KEY;
+  console.log("GOOGLE_KEY: (planDestinationActivities)", API_KEY);
   let query = encodeURIComponent(dest + " tourist attractions");
 
   // Instead of generic query:

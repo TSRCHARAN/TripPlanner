@@ -4,7 +4,8 @@ import axios from "axios";
  * Get latitude & longitude for a given place name
  */
 export async function getLatLon(locationName) {
-    let API_KEY = process.env.GOOGLE_API_KEY;
+    const API_KEY = process.env.GOOGLE_API_KEY;
+    console.log("GOOGLE_KEY: (getLatLon)", API_KEY);
   if (!locationName) return null;
   try {
     const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(

@@ -4,6 +4,7 @@ import { mapBudgetToRange } from "../utils/budgetUtils.js";
 /** get nearby places by type with budget mapping (for hotels/restaurants) */
 async function getNearbyByType(lat, lon, type, preferences = {}) {
   const GOOGLE_KEY = process.env.GOOGLE_API_KEY;
+  console.log("GOOGLE_KEY: (getNearbyByType)", GOOGLE_KEY);
   const budget = mapBudgetToRange(preferences.budget_category || "mid");
   const minp = budget.priceLevel[0], maxp = budget.priceLevel[1];
   const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lon}&radius=4000&type=${type}&minprice=${minp}&maxprice=${maxp}&key=${GOOGLE_KEY}`;
