@@ -43,9 +43,6 @@ export async function findBestTransport(start, dest, prefs) {
     ? { lat: prefs.destLat, lon: prefs.destLon }
     : await getLatLon(dest);
 
-    console.log("Start Geo:", startGeo);
-    console.log("Dest Geo:", destGeo);
-    
 
   if (!startGeo || !destGeo)
     throw new Error("Unable to resolve location coordinates");
@@ -109,6 +106,8 @@ export async function findBestTransport(start, dest, prefs) {
 
     // 🧩 TRAIN FALLBACK LOGIC
     if (allowTrain) {
+      console.log("Nearest Source Train Hub:", nearestSourceTrainHub);
+      console.log("Nearest Dest Train Hub:", nearestDestTrainHub);
       // SourceHub → Destination
       if (nearestSourceTrainHub?.nearest) {
         const via1 = await getTrains(
@@ -187,7 +186,7 @@ export async function findBestTransport(start, dest, prefs) {
       );
     }
   }
-
+console.log("Total transport options found:", options.length);
   // --- Step 5: Rank & choose best option ---
   if (!options.length)
     throw new Error("No transport options found (direct or via hub)");
