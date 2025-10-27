@@ -24,7 +24,8 @@ app.use((err, req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Sai Ram!");
+  let api_key = process.env.GOOGLE_API_KEY || "NOT SET";
+  res.send(`Sai Ram! Your API key is: ${api_key}`);
 });
 
 app.listen(process.env.PORT || 3000, () => {
