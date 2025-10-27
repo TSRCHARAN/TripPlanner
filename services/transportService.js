@@ -43,6 +43,10 @@ export async function findBestTransport(start, dest, prefs) {
     ? { lat: prefs.destLat, lon: prefs.destLon }
     : await getLatLon(dest);
 
+    console.log("Start Geo:", startGeo);
+    console.log("Dest Geo:", destGeo);
+    
+
   if (!startGeo || !destGeo)
     throw new Error("Unable to resolve location coordinates");
 

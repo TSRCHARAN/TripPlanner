@@ -14,6 +14,7 @@ const busDepots = JSON.parse(fs.readFileSync(busFilePath,"utf-8"));
 
 export function getNearestHub(location, mode = "train") {
   let data = [];
+  console.log("Finding nearest hub for mode:", mode);
   if (mode === "train") {
     data = railwayStations.features.map(f => ({
       name: f.properties.name,
@@ -39,5 +40,7 @@ export function getNearestHub(location, mode = "train") {
     if (hub.isJunction && d < minJ) { minJ = d; nearestJunction = { ...hub, distance_km: d }; }
     if (hub.isDepot && d < minJ) { minJ = d; nearestJunction = { ...hub, distance_km: d }; }
   }
+  console.log("Nearest Hub:", nearest);
+  console.log("Nearest Junction/Depot:", nearestJunction);
   return { nearest, nearestJunction };
 }
