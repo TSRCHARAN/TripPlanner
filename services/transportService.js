@@ -4,36 +4,7 @@ import { getNearestHub } from "./hubService.js";
 import { computeScore, explainChoice } from "../utils/rankUtils.js";
 import { getLatLon } from "../utils/geocodeUtils.js";
 
-/**
- * Fetch all possible direct transport options (trains + buses)
- */
-export async function fetchAllTransportOptions(start, dest, prefs) {
-  const [fromTrain, toTrain] = await Promise.allSettled([
-    getStationCode(start),
-    getStationCode(dest),
-  ]);
-
-  const [fromBus, toBus] = await Promise.allSettled([
-    getBusLocationId(start),
-    getBusLocationId(dest),
-  ]);
-
-  const trains =
-    fromTrain.value?.code && toTrain.value?.code
-      ? await getTrains(fromTrain.value.code, toTrain.value.code, prefs.startDate)
-      : [];
-
-  const buses =
-    fromBus.value && toBus.value
-      ? await getBuses(fromBus.value, toBus.value, prefs.startDate)
-      : [];
-
-  return { trains, buses };
-}
-
-/**
- * 🚀 Unified Transport Discovery, Ranking & Fallback (Train + Bus)
- */
+/** 🚆 + 🚌 Unified Transport Discovery, Ranking & Fallback */
 export async function findBestTransport(start, dest, prefs) {
   // --- Step 1: Resolve coordinates ---
   const startGeo = prefs.startLat
@@ -43,11 +14,10 @@ export async function findBestTransport(start, dest, prefs) {
     ? { lat: prefs.destLat, lon: prefs.destLon }
     : await getLatLon(dest);
 
-
   if (!startGeo || !destGeo)
     throw new Error("Unable to resolve location coordinates");
 
-  // --- Step 2: Get station/bus IDs ---
+  // --- Step 2: Get codes/IDs ---
   const [fromTrain, toTrain] = await Promise.allSettled([
     getStationCode(start),
     getStationCode(dest),
@@ -57,7 +27,7 @@ export async function findBestTransport(start, dest, prefs) {
     getBusLocationId(dest),
   ]);
 
-  // --- Step 3: Try direct routes ---
+  // --- Step 3: Direct routes ---
   const trains =
     fromTrain.value?.code && toTrain.value?.code
       ? await getTrains(fromTrain.value.code, toTrain.value.code, prefs.startDate)
@@ -70,10 +40,9 @@ export async function findBestTransport(start, dest, prefs) {
 
   let options = [];
 
-  // 🚫 Respect avoidModes
+  // Respect avoidModes
   const allowTrain = !prefs.avoidModes?.includes("train");
   const allowBus = !prefs.avoidModes?.includes("bus");
-  const allowFlight = !prefs.avoidModes?.includes("flight");
 
   if (allowTrain) {
     options.push(
@@ -99,66 +68,43 @@ export async function findBestTransport(start, dest, prefs) {
   if (!options.length) {
     console.log("⚠️ No direct transport found, searching via hubs...");
 
+    // Train Hubs
     const nearestSourceTrainHub = allowTrain ? getNearestHub(startGeo, "train") : null;
     const nearestDestTrainHub = allowTrain ? getNearestHub(destGeo, "train") : null;
+
+    // Bus Hubs
     const nearestSourceBusHub = allowBus ? getNearestHub(startGeo, "bus") : null;
     const nearestDestBusHub = allowBus ? getNearestHub(destGeo, "bus") : null;
 
-    // 🧩 TRAIN FALLBACK LOGIC
+    // 🚆 TRAIN FALLBACK LOGIC
     if (allowTrain) {
-      console.log("Nearest Source Train Hub:", nearestSourceTrainHub);
-      console.log("Nearest Dest Train Hub:", nearestDestTrainHub);
-      // SourceHub → Destination
-      if (nearestSourceTrainHub?.nearest) {
-        const via1 = await getTrains(
-          nearestSourceTrainHub.nearest.code,
-          toTrain.value?.code || dest,
-          prefs.startDate
-        );
-        options.push(
-          ...via1.map((t) => ({
-            mode: "train",
-            viaHub: true,
-            hubs: { from: nearestSourceTrainHub.nearest },
-            ...t,
-            score: computeScore(t, prefs),
-          }))
-        );
-      }
+      const sHub = nearestSourceTrainHub?.nearest;
+      const sJn = nearestSourceTrainHub?.nearestJunction;
+      const dHub = nearestDestTrainHub?.nearest;
+      const dJn = nearestDestTrainHub?.nearestJunction;
 
-      // Source → DestinationHub
-      if (nearestDestTrainHub?.nearest) {
-        const via2 = await getTrains(
-          fromTrain.value?.code || start,
-          nearestDestTrainHub.nearest.code,
-          prefs.startDate
-        );
-        options.push(
-          ...via2.map((t) => ({
-            mode: "train",
-            viaHub: true,
-            hubs: { to: nearestDestTrainHub.nearest },
-            ...t,
-            score: computeScore(t, prefs),
-          }))
-        );
-      }
+      const allTrainCombos = [
+        { from: sHub, to: toTrain.value?.code || dest },
+        { from: fromTrain.value?.code || start, to: dHub },
+        { from: sJn, to: toTrain.value?.code || dest },
+        { from: fromTrain.value?.code || start, to: dJn },
+        { from: sJn, to: dJn },
+      ];
 
-      // SourceHub → DestinationHub
-      if (nearestSourceTrainHub?.nearest && nearestDestTrainHub?.nearest) {
-        const via3 = await getTrains(
-          nearestSourceTrainHub.nearest.code,
-          nearestDestTrainHub.nearest.code,
+      for (const combo of allTrainCombos) {
+        if (!combo.from || !combo.to?.code) continue;
+
+        const viaTrains = await getTrains(
+          combo.from.code || combo.from,
+          combo.to.code || combo.to,
           prefs.startDate
         );
+
         options.push(
-          ...via3.map((t) => ({
+          ...viaTrains.map((t) => ({
             mode: "train",
             viaHub: true,
-            hubs: {
-              from: nearestSourceTrainHub.nearest,
-              to: nearestDestTrainHub.nearest,
-            },
+            hubs: { from: combo.from, to: combo.to },
             ...t,
             score: computeScore(t, prefs),
           }))
@@ -166,12 +112,12 @@ export async function findBestTransport(start, dest, prefs) {
       }
     }
 
-    // 🧩 BUS FALLBACK LOGIC
+    // 🚌 BUS FALLBACK LOGIC
     if (allowBus && nearestSourceBusHub?.nearest && nearestDestBusHub?.nearest) {
       const fromId = await getBusLocationId(nearestSourceBusHub.nearest.name);
       const toId = await getBusLocationId(nearestDestBusHub.nearest.name);
-
       const viaBus = await getBuses(fromId, toId, prefs.startDate);
+
       options.push(
         ...viaBus.map((b) => ({
           mode: "bus",
@@ -186,10 +132,12 @@ export async function findBestTransport(start, dest, prefs) {
       );
     }
   }
-console.log("Total transport options found:", options.length);
-  // --- Step 5: Rank & choose best option ---
+
+  console.log("✅ Total transport options found:", options.length);
+
+  // --- Step 5: Rank & return ---
   if (!options.length)
-    throw new Error("No transport options found (direct or via hub)");
+    throw new Error("No transport options found (direct or via hub/junction)");
 
   options.sort((a, b) => b.score - a.score);
   const best = options[0];

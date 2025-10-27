@@ -1,4 +1,4 @@
-import { findBestTransport, fetchAllTransportOptions } from "../services/transportService.js";
+import { findBestTransport } from "../services/transportService.js";
 import { planHubActivities, planDestinationActivities, generateTripSummary  } from "../services/tripPlannerService.js";
 
 /** 1️⃣ Auto planner — chooses best mode automatically */

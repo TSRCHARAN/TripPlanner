@@ -47,7 +47,7 @@ export async function getTrains(from, to, dateOfJourney) {
 
   dateOfJourney = toDDMMYYYY(dateOfJourney);
   const url = `https://cttrainsapi.confirmtkt.com/api/v1/trains/search?sourceStationCode=${from}&destinationStationCode=${to}&addAvailabilityCache=true&excludeMultiTicketAlternates=false&excludeBoostAlternates=false&sortBy=DEFAULT&dateOfJourney=${dateOfJourney}&enableNearby=true&enableTG=true&tGPlan=CTG-15&showTGPrediction=false&tgColor=DEFAULT&showPredictionGlobal=true&showNewAlternates=false`;
-console.log("Fetching trains with URL:", url);
+
   const { data } = await axios.get(url);
 
   return data?.data?.trainList?.map(t => ({

@@ -7,9 +7,9 @@ function isLateNight(timeStr) {
   return total >= 18 * 60 || total <= 6 * 60;
 }
 
-/**
- * 🏙️ Plan hub activities (stay, food, transfer)
- */
+/* ─────────────────────────────────────────────
+   🏙️  HUB PLANNING
+────────────────────────────────────────────── */
 export async function planHubActivities(hub, arrivalTime, prefs) {
   const isNightArrival = arrivalTime && isLateNight(arrivalTime);
 
@@ -21,94 +21,100 @@ export async function planHubActivities(hub, arrivalTime, prefs) {
     };
   }
 
-  const stayResults = await searchPlaces(hub.lat, hub.lon, "lodging");
-  const foodResults = await searchPlaces(hub.lat, hub.lon, "restaurant");
+  const stayResults = await searchPlacesSmart(hub.lat, hub.lon, "lodging", prefs);
+  const foodResults = await searchPlacesSmart(hub.lat, hub.lon, "restaurant", prefs);
+
+  const filteredStay = lightFilter(stayResults, prefs, "accommodation");
+  const filteredFood = lightFilter(foodResults, prefs, "food");
+
   return {
     hubName: hub.name,
     overnightRequired: true,
-    stay: stayResults,
-    food: foodResults,
+    stay: filteredStay.results,
+    food: filteredFood.results,
+    reasoning: [filteredStay.reason, filteredFood.reason].filter(Boolean),
     transfer: {
       mapsLink: `https://www.google.com/maps/dir/?api=1&origin=${hub.lat},${hub.lon}&destination=${encodeURIComponent(prefs.toLocation)}`,
       estimatedDistanceKm: await estimateDistanceKm(hub, prefs.toLocation)
     }
   };
-
-  // return {
-  //   hubName: hub.name,
-  //   overnightRequired: true,
-  //   stay: filterAccommodation(stayResults, prefs.accommodation, prefs.budgetCategory),
-  //   food: filterFood(foodResults, prefs.food),
-  //   transfer: {
-  //     mapsLink: `https://www.google.com/maps/dir/?api=1&origin=${hub.lat},${hub.lon}&destination=${encodeURIComponent(prefs.toLocation)}`,
-  //     estimatedDistanceKm: await estimateDistanceKm(hub, prefs.toLocation)
-  //   }
-  // };
 }
 
-/**
- * 🎯 Plan sightseeing, stay & food at the final destination
- */
+/* ─────────────────────────────────────────────
+   🎯  DESTINATION PLANNING
+────────────────────────────────────────────── */
 export async function planDestinationActivities(dest, prefs) {
-  const API_KEY = process.env.GOOGLE_API_KEY;
-  console.log("GOOGLE_KEY: (planDestinationActivities)", API_KEY);
-  let query = encodeURIComponent(dest + " tourist attractions");
+  const attractions = await searchPlacesSmart(dest, null, "attractions", prefs);
+  const hotels = await searchPlacesSmart(dest, null, "hotels", prefs);
+  const food = await searchPlacesSmart(dest, null, "restaurants", prefs);
 
-  // Instead of generic query:
-// query = `${dest} tourist attractions`;
-// console.log("Destination Query:", query);
-// // Personalized smart query:
-// let interestKeywords = prefs.sightseeing?.interests?.join(" OR ") || "tourist attractions";
-// query = `${dest} ${interestKeywords}`;
+  const filteredAttractions = lightFilter(attractions, prefs, "sightseeing");
+  const filteredHotels = lightFilter(hotels, prefs, "accommodation");
+  const filteredFood = lightFilter(food, prefs, "food");
 
-
-  const { data: attractionsData } = await axios.get(
-    `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${query}&key=${API_KEY}`
-  );
-
-  let attractions = simplifyPlaces(attractionsData.results.slice(0, 30));
-  
-  const hotels = await searchPlacesByQuery(dest, "hotels");
-  const food = await searchPlacesByQuery(dest, "restaurants");
-  //attractions = filterAttractions(attractions, prefs.sightseeing);
-  // const hotels = filterAccommodation(
-  //   await searchPlacesByQuery(dest, "hotels"),
-  //   prefs.accommodation,
-  //   prefs.budgetCategory
-  // );
-  // const food = filterFood(
-  //   await searchPlacesByQuery(dest, "restaurants"),
-  //   prefs.food
-  // );
-
-  return { attractions, hotels, food };
+  return {
+    attractions: filteredAttractions.results,
+    hotels: filteredHotels.results,
+    food: filteredFood.results,
+    reasoning: [
+      filteredAttractions.reason,
+      filteredHotels.reason,
+      filteredFood.reason
+    ].filter(Boolean)
+  };
 }
 
-/**
- * 🔍 Nearby search using lat/lon
- */
-async function searchPlaces(lat, lon, type) {
+/* ─────────────────────────────────────────────
+   🔍  SMART SEARCH (Google + preferences)
+────────────────────────────────────────────── */
+async function searchPlacesSmart(cityOrLat, lon, type, prefs = {}) {
   const API_KEY = process.env.GOOGLE_API_KEY;
-  const { data } = await axios.get(
-    `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lon}&radius=3000&type=${type}&key=${API_KEY}`
-  );
-  return simplifyPlaces(data.results.slice(0, 5));
+  let url, query;
+
+  if (lon) {
+    // Nearby search for hubs
+    query = buildQueryKeyword(type, prefs);
+    url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${cityOrLat},${lon}&radius=3000&type=${type}&keyword=${encodeURIComponent(query)}&key=${API_KEY}`;
+  } else {
+    // Text search for destination city
+    query = `${cityOrLat} ${buildQueryKeyword(type, prefs)}`;
+    url = `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${encodeURIComponent(query)}&key=${API_KEY}`;
+  }
+
+  const { data } = await axios.get(url);
+  return simplifyPlaces(data.results.slice(0, 7));
 }
 
-/**
- * 🔍 Text search using city name
- */
-async function searchPlacesByQuery(city, type) {
-  const API_KEY = process.env.GOOGLE_API_KEY;
-  const { data } = await axios.get(
-    `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${encodeURIComponent(city + " " + type)}&key=${API_KEY}`
-  );
-  return simplifyPlaces(data.results.slice(0, 5));
+/* ─────────────────────────────────────────────
+   🧠  Query builder (inject preferences)
+────────────────────────────────────────────── */
+function buildQueryKeyword(type, prefs) {
+  switch (type) {
+    case "restaurants":
+      const cuisines = prefs.food?.preferred_cuisines?.join(" ") || "";
+      const veg = prefs.food?.type === "veg" ? "veg" : "";
+      return `${veg} ${cuisines} restaurants`;
+    case "hotels":
+    case "lodging":
+      const types = prefs.accommodation?.types?.join(" ") || "";
+      const budget =
+        prefs.budgetCategory === "low"
+          ? "budget"
+          : prefs.budgetCategory === "high"
+          ? "luxury"
+          : "midrange";
+      return `${budget} ${types} hotels`;
+    case "attractions":
+      const interests = prefs.sightseeing?.interests?.join(" ") || "tourist attractions";
+      return interests;
+    default:
+      return type;
+  }
 }
 
-/**
- * 🧩 Simplify Google Place results
- */
+/* ─────────────────────────────────────────────
+   🔎  Simplify Google response
+────────────────────────────────────────────── */
 function simplifyPlaces(results = []) {
   return results.map((p) => ({
     name: p.name,
@@ -122,131 +128,138 @@ function simplifyPlaces(results = []) {
   }));
 }
 
-/**
- * 💰 Filter stays/hotels by budget + rating + type
- */
-function filterAccommodation(items, accommodationPrefs, budgetCategory) {
-  if (!items?.length) return [];
+/* ─────────────────────────────────────────────
+   🧹  Lightweight filtering + fallback logic
+────────────────────────────────────────────── */
+function lightFilter(items, prefs, category) {
+  if (!items?.length)
+    return { results: [], reason: "No data found from Google API." };
 
-  return items.filter((p) => {
-    const meetsType = !accommodationPrefs?.types?.length ||
-      accommodationPrefs.types.some((t) =>
-        (p.types || []).some((pt) => pt.includes(t))
+  let filtered = [];
+  let reason = "";
+
+  switch (category) {
+    case "accommodation":
+      filtered = items.filter(
+        (h) =>
+          (!prefs.accommodation?.rating_min ||
+            h.rating >= prefs.accommodation.rating_min) &&
+          (!prefs.budgetCategory ||
+            (prefs.budgetCategory === "low" && h.priceLevel <= 2) ||
+            (prefs.budgetCategory === "mid" && h.priceLevel <= 3) ||
+            (prefs.budgetCategory === "high" && h.priceLevel >= 3))
       );
 
-    const meetsRating =
-      !accommodationPrefs?.rating_min ||
-      (p.rating && p.rating >= accommodationPrefs.rating_min);
+      if (!filtered.length) {
+        filtered = items.filter((h) => h.rating >= 3);
+        reason =
+          "No hotels matched your filters — showing top-rated stays instead.";
+      }
+      break;
 
-    const meetsBudget = (() => {
-      if (!budgetCategory || !p.priceLevel) return true;
-      if (budgetCategory === "low") return p.priceLevel <= 2;
-      if (budgetCategory === "mid") return p.priceLevel <= 3;
-      if (budgetCategory === "high") return p.priceLevel >= 3;
-      return true;
-    })();
+    case "food":
+      filtered = items.filter((r) => {
+        const name = r.name.toLowerCase();
+        const vegOk = prefs.food?.type !== "veg" || name.includes("veg");
+        const cuisineOk =
+          !prefs.food?.preferred_cuisines?.length ||
+          prefs.food.preferred_cuisines.some((c) =>
+            name.includes(c.toLowerCase())
+          );
+        return vegOk && cuisineOk;
+      });
 
-    return meetsType && meetsRating && meetsBudget;
-  });
-}
+      if (!filtered.length) {
+        filtered = items.slice(0, 5);
+        reason =
+          "No exact cuisine matches found — showing general restaurants nearby.";
+      }
+      break;
 
-/**
- * 🍽️ Filter restaurants by cuisine and veg/non-veg
- */
-function filterFood(restaurants, foodPrefs) {
-  if (!restaurants?.length) return [];
+    case "sightseeing":
+      filtered = items;
+      if (prefs.sightseeing?.interests?.length) {
+        const keywords = prefs.sightseeing.interests.map((i) =>
+          i.toLowerCase()
+        );
+        filtered = items.filter((a) =>
+          keywords.some((k) =>
+            (a.name + " " + (a.types || []).join(" ")).toLowerCase().includes(k)
+          )
+        );
+      }
 
-  return restaurants.filter((r) => {
-    const name = r.name.toLowerCase();
-    const cuisines = foodPrefs?.preferred_cuisines?.map((c) => c.toLowerCase()) || [];
+      if (prefs.sightseeing?.avoid_crowds)
+        filtered = filtered.filter((a) => (a.userRatingsTotal || 0) < 1000);
 
-    const cuisineMatch = cuisines.length
-      ? cuisines.some((c) => name.includes(c))
-      : true;
+      if (!filtered.length) {
+        filtered = items.slice(0, 5);
+        reason =
+          "No attractions matched your interests — showing popular nearby spots.";
+      }
+      break;
 
-    const vegMatch =
-      !foodPrefs?.type ||
-      (foodPrefs.type.toLowerCase() === "veg" ? name.includes("veg") : true);
-
-    return cuisineMatch && vegMatch;
-  });
-}
-
-/**
- * 🏞️ Filter attractions by interests (nature, waterfalls, etc.)
- */
-function filterAttractions(attractions, sightseeingPrefs) {
-  if (!sightseeingPrefs?.interests?.length) return attractions;
-
-  const keywords = sightseeingPrefs.interests.map((i) => i.toLowerCase());
-
-  let filtered = attractions.filter((a) =>
-    keywords.some((k) =>
-      (a.name + " " + (a.types || []).join(" ")).toLowerCase().includes(k)
-    )
-  );
-
-  if (sightseeingPrefs.avoid_crowds) {
-    filtered = filtered.filter((a) => (a.userRatingsTotal || 0) < 1000);
+    default:
+      filtered = items;
   }
 
-  return filtered;
+  return { results: filtered, reason };
 }
 
-/**
- * 🗺️ Distance between hub and destination
- */
+/* ─────────────────────────────────────────────
+   📏  Distance Matrix helper
+────────────────────────────────────────────── */
 async function estimateDistanceKm(hub, destinationQuery) {
   try {
     const API_KEY = process.env.GOOGLE_API_KEY;
     const { data } = await axios.get(
-      `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${hub.lat},${hub.lon}&destinations=${encodeURIComponent(destinationQuery)}&key=${API_KEY}`
+      `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${hub.lat},${hub.lon}&destinations=${encodeURIComponent(
+        destinationQuery
+      )}&key=${API_KEY}`
     );
 
     const el = data.rows?.[0]?.elements?.[0];
     if (!el || el.status !== "OK") return { distance: "N/A", duration: "N/A" };
-
     return {
       distance: el.distance?.text || "N/A",
       duration: el.duration?.text || "N/A"
     };
-  } catch (err) {
-    console.warn("DistanceMatrix error:", err.message);
+  } catch {
     return { distance: "N/A", duration: "N/A" };
   }
 }
 
-/**
- * 🧭 Natural-language trip summary
- */
+/* ─────────────────────────────────────────────
+   🧭  Trip summary generator
+────────────────────────────────────────────── */
 export function generateTripSummary({ best, prefs, hubPlan, destinationPlan }) {
   if (!best) return "No transport found for trip summary.";
 
   const modeEmoji = best.mode === "train" ? "🚆" : "🚌";
-  const startDate = prefs.startDate;
   const startTime = best.departureTime ? `at ${best.departureTime}` : "";
   const arriveTime = best.arrivalTime ? `around ${best.arrivalTime}` : "";
   const viaText = best.viaHub
-    ? `via ${best.hubs?.from?.name || best.hubs?.to?.name}`
+    ? ` via ${best.hubs?.from?.name || best.hubs?.to?.name}`
     : "";
 
-  let summary = `${modeEmoji} Start from ${prefs.fromLocation} on ${startDate} ${startTime} ${viaText} to reach ${prefs.toLocation} ${arriveTime}.`;
+  let summary = `${modeEmoji} Start from ${prefs.fromLocation} on ${prefs.startDate} ${startTime}${viaText} to reach ${prefs.toLocation} ${arriveTime}.`;
 
-  if (best.viaHub && hubPlan?.overnightRequired) {
+  if (best.viaHub && hubPlan?.overnightRequired)
     summary += ` Stay overnight at ${hubPlan.hubName}, then continue the next morning.`;
-  }
 
-  if (destinationPlan?.attractions?.length) {
-    summary += ` Explore highlights like ${destinationPlan.attractions
+  if (destinationPlan?.attractions?.length)
+    summary += ` Explore ${destinationPlan.attractions
       .slice(0, 2)
       .map((a) => a.name)
-      .join(", ")} in ${prefs.toLocation}.`;
-  }
+      .join(", ")}.`;
 
-  if (prefs.returnDate) {
-    summary += ` Return on ${prefs.returnDate} during ${prefs.preferredReturnTime || "evening"}.`;
-  }
+  if (destinationPlan?.reasoning?.length)
+    summary += ` (Some preferences were adjusted: ${destinationPlan.reasoning.join(
+      " "
+    )}).`;
 
-  summary += " Have a safe and comfortable journey! ✈️";
+  if (prefs.returnDate)
+    summary += ` Return on ${prefs.returnDate} (${prefs.preferredReturnTime || "evening"}).`;
+
   return summary.trim();
 }
