@@ -1,8 +1,16 @@
 import fs from "fs";
+import path from "path";
 import { haversineDistance } from "../utils/distanceUtils.js";
+// import railwayStations from '../data/railwayStations.json' assert { type: 'json' };
+// import busDepots from '../data/busStands.json' assert { type: 'json' };
 
-const railwayStations = JSON.parse(fs.readFileSync("./public/railwayStations.json","utf-8"));
-const busDepots = JSON.parse(fs.readFileSync("./public/busStands.json","utf-8"));
+const railwayFilePath = path.join(process.cwd(), "data", "railwayStations.json");
+const railwayStations = JSON.parse(fs.readFileSync(railwayFilePath, "utf8"));
+const busFilePath = path.join(process.cwd(), "data", "busStands.json");
+const busDepots = JSON.parse(fs.readFileSync(busFilePath,"utf-8"));
+
+// const railwayStations = JSON.parse(fs.readFileSync("./public/railwayStations.json","utf-8"));
+// const busDepots = JSON.parse(fs.readFileSync("./public/busStands.json","utf-8"));
 
 export function getNearestHub(location, mode = "train") {
   let data = [];
