@@ -23,17 +23,27 @@ export async function planHubActivities(hub, arrivalTime, prefs) {
 
   const stayResults = await searchPlaces(hub.lat, hub.lon, "lodging");
   const foodResults = await searchPlaces(hub.lat, hub.lon, "restaurant");
-
   return {
     hubName: hub.name,
     overnightRequired: true,
-    stay: filterAccommodation(stayResults, prefs.accommodation, prefs.budgetCategory),
-    food: filterFood(foodResults, prefs.food),
+    stay: stayResults,
+    food: foodResults,
     transfer: {
       mapsLink: `https://www.google.com/maps/dir/?api=1&origin=${hub.lat},${hub.lon}&destination=${encodeURIComponent(prefs.toLocation)}`,
       estimatedDistanceKm: await estimateDistanceKm(hub, prefs.toLocation)
     }
   };
+
+  // return {
+  //   hubName: hub.name,
+  //   overnightRequired: true,
+  //   stay: filterAccommodation(stayResults, prefs.accommodation, prefs.budgetCategory),
+  //   food: filterFood(foodResults, prefs.food),
+  //   transfer: {
+  //     mapsLink: `https://www.google.com/maps/dir/?api=1&origin=${hub.lat},${hub.lon}&destination=${encodeURIComponent(prefs.toLocation)}`,
+  //     estimatedDistanceKm: await estimateDistanceKm(hub, prefs.toLocation)
+  //   }
+  // };
 }
 
 /**
@@ -41,33 +51,34 @@ export async function planHubActivities(hub, arrivalTime, prefs) {
  */
 export async function planDestinationActivities(dest, prefs) {
   const API_KEY = process.env.GOOGLE_API_KEY;
-  const query = encodeURIComponent(dest + " tourist attractions");
+  let query = encodeURIComponent(dest + " tourist attractions");
 
   // Instead of generic query:
-query = `${dest} tourist attractions`;
-
-// Personalized smart query:
-const interestKeywords = prefs.sightseeing?.interests?.join(" OR ") || "tourist attractions";
-query = `${dest} ${interestKeywords}`;
+// query = `${dest} tourist attractions`;
+// console.log("Destination Query:", query);
+// // Personalized smart query:
+// let interestKeywords = prefs.sightseeing?.interests?.join(" OR ") || "tourist attractions";
+// query = `${dest} ${interestKeywords}`;
 
 
   const { data: attractionsData } = await axios.get(
     `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${query}&key=${API_KEY}`
   );
 
-  let attractions = simplifyPlaces(attractionsData.results.slice(0, 10));
-  attractions = filterAttractions(attractions, prefs.sightseeing);
-
-  const hotels = filterAccommodation(
-    await searchPlacesByQuery(dest, "hotels"),
-    prefs.accommodation,
-    prefs.budgetCategory
-  );
-
-  const food = filterFood(
-    await searchPlacesByQuery(dest, "restaurants"),
-    prefs.food
-  );
+  let attractions = simplifyPlaces(attractionsData.results.slice(0, 30));
+  
+  const hotels = await searchPlacesByQuery(dest, "hotels");
+  const food = await searchPlacesByQuery(dest, "restaurants");
+  //attractions = filterAttractions(attractions, prefs.sightseeing);
+  // const hotels = filterAccommodation(
+  //   await searchPlacesByQuery(dest, "hotels"),
+  //   prefs.accommodation,
+  //   prefs.budgetCategory
+  // );
+  // const food = filterFood(
+  //   await searchPlacesByQuery(dest, "restaurants"),
+  //   prefs.food
+  // );
 
   return { attractions, hotels, food };
 }

@@ -1,8 +1,8 @@
 import fs from "fs";
 import { haversineDistance } from "../utils/distanceUtils.js";
 
-const railwayStations = JSON.parse(fs.readFileSync("./data/railwayStations.json","utf-8"));
-const busDepots = JSON.parse(fs.readFileSync("./data/busStands.json","utf-8"));
+const railwayStations = JSON.parse(fs.readFileSync("./public/railwayStations.json","utf-8"));
+const busDepots = JSON.parse(fs.readFileSync("./public/busStands.json","utf-8"));
 
 export function getNearestHub(location, mode = "train") {
   let data = [];
