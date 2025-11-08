@@ -3,7 +3,7 @@ import { planTripAuto, planTripWithTransport, getTransportOptions, getNearestHub
 
 const router = express.Router();
 
-router.post("/plan-trip-auto", planTripAuto);
+router.post("/planTripAuto", planTripAuto);
 router.post("/plan-trip-with-transport", planTripWithTransport);
 router.post("/get-transport-options", getTransportOptions);
 router.post("/get-nearest-hub", getNearestHub);

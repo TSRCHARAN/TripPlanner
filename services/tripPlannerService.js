@@ -115,17 +115,88 @@ function buildQueryKeyword(type, prefs) {
 /* ─────────────────────────────────────────────
    🔎  Simplify Google response
 ────────────────────────────────────────────── */
-function simplifyPlaces(results = []) {
-  return results.map((p) => ({
-    name: p.name,
-    rating: p.rating || "N/A",
-    userRatingsTotal: p.user_ratings_total || 0,
-    address: p.formatted_address || p.vicinity || "Not available",
-    location: p.geometry?.location || null,
-    mapLink: `https://www.google.com/maps/place/?q=place_id:${p.place_id}`,
-    types: p.types?.slice(0, 3) || [],
-    priceLevel: p.price_level || null
-  }));
+export function simplifyPlaces(results = []) {
+  function mapCategoryFromTypes(types = []) {
+    // return a more granular key where possible; fall back to generic keys
+    if (!types || !types.length) return { key: "other", label: "Other" };
+    const set = new Set(types || []);
+
+    // Specific attractions
+    if (set.has("museum")) return { key: "museum", label: "Museum" };
+    if (set.has("art_gallery")) return { key: "art_gallery", label: "Art gallery" };
+    if (set.has("zoo")) return { key: "zoo", label: "Zoo" };
+    if (set.has("aquarium")) return { key: "aquarium", label: "Aquarium" };
+    if (set.has("park")) return { key: "park", label: "Park" };
+    if (set.has("tourist_attraction")) return { key: "tourist_attraction", label: "Attraction" };
+
+    // Food & drink
+    if (set.has("restaurant")) return { key: "restaurant", label: "Restaurant" };
+    if (set.has("cafe")) return { key: "cafe", label: "Cafe" };
+    if (set.has("bar")) return { key: "bar", label: "Bar" };
+    if (set.has("bakery")) return { key: "bakery", label: "Bakery" };
+
+    // Lodging
+    if (set.has("lodging") || set.has("hotel")) return { key: "hotel", label: "Hotel" };
+    if (set.has("hostel")) return { key: "hostel", label: "Hostel" };
+
+    // Shopping
+    if (set.has("shopping_mall")) return { key: "shopping_mall", label: "Shopping mall" };
+    if (set.has("store") || set.has("clothing_store") || set.has("department_store")) return { key: "store", label: "Store" };
+
+    // Transit / stations
+    if (set.has("airport")) return { key: "airport", label: "Airport" };
+    if (set.has("train_station")) return { key: "train_station", label: "Train station" };
+    if (set.has("bus_station")) return { key: "bus_station", label: "Bus station" };
+    if (set.has("transit_station")) return { key: "transit_station", label: "Transit station" };
+
+    // Fallback grouping
+    if (types.join("|").match(/food|meal/)) return { key: "food", label: "Food" };
+    return { key: "other", label: "Other" };
+  }
+
+  return results.map((p) => {
+    const photos = (p.photos || []).slice(0, 3).map((ph) => ({
+      ref: ph.photo_reference,
+      width: ph.width,
+      height: ph.height,
+    }));
+
+    const photoCount = (p.photos || []).length || 0;
+    const photosAvailable = photoCount > 0;
+
+    const thumbnail = photosAvailable
+      ? `/photo/placePhoto?ref=${encodeURIComponent(photos[0].ref)}&maxwidth=300`
+      : null;
+
+    const location = p.geometry?.location
+      ? { lat: p.geometry.location.lat, lon: p.geometry.location.lng }
+      : null;
+
+    return {
+      id: p.place_id,
+      name: p.name,
+  rawTypes: p.types || [],
+  categoryKey: mapCategoryFromTypes(p.types || []).key,
+  category: mapCategoryFromTypes(p.types || []).label,
+      opening_hours: p.opening_hours
+        ? { open_now: !!p.opening_hours.open_now, weekday_text: p.opening_hours.weekday_text || [] }
+        : null,
+      phone: p.formatted_phone_number || p.international_phone_number || null,
+      website: p.website || null,
+      rating: typeof p.rating === "number" ? p.rating : null,
+      userRatingsTotal: p.user_ratings_total || 0,
+      address: p.formatted_address || p.vicinity || "Not available",
+      location,
+      mapLink: `https://www.google.com/maps/place/?q=place_id:${p.place_id}`,
+  // Return full types array from Google Places (breaking change): frontend may rely on full tokens
+  types: p.types || [],
+      priceLevel: p.price_level || null,
+  thumbnail,
+  photosAvailable,
+  photoCount,
+      source: "google_places",
+    };
+  });
 }
 
 /* ─────────────────────────────────────────────

@@ -4,7 +4,11 @@ import dotenv from "dotenv";
 import cors from "cors";
 // import serverless from "serverless-http";
 dotenv.config();
-import { planTripAuto, planTripWithTransport, getTransportOptions } from "./controllers/tripController.js";
+// import { planTripAuto, planTripWithTransport, getTransportOptions } from "./controllers/tripController.js";
+// import { placePhoto } from "./controllers/photoController.js";
+
+import tripRouter from "./routes/tripRoutes.js";
+import photoRoutes from "./routes/photoRoutes.js";
 
 const app = express();
 app.use(express.json());
@@ -14,9 +18,13 @@ app.use(cors());
 
 app.get("/api/health", (_, res) => res.json({ status: "ok" }));
 
-app.post("/api/plan-trip-auto", planTripAuto);
-app.post("/api/plan-trip-with-transport", planTripWithTransport);
-app.post("/api/get-transport-options", getTransportOptions);
+
+app.use('/trip', tripRouter);
+app.use('/photo', photoRoutes);
+// app.post("/api/plan-trip-auto", planTripAuto);
+// app.post("/api/plan-trip-with-transport", planTripWithTransport);
+// app.post("/api/get-transport-options", getTransportOptions);
+// app.get("/api/place-photo", placePhoto);
 
 app.use((err, req, res, next) => {
   console.error("Server Error:", err);

@@ -1,0 +1,71 @@
+{
+  "sightseeing": [
+    {
+      "id": "place_abc123",
+      "name": "City History Museum",
+      "rawTypes": ["tourist_attraction", "museum", "point_of_interest", "establishment"],
+      "categoryKey": "museum",
+      "category": "Museum",
+      "opening_hours": { "open_now": true, "weekday_text": ["Mon: 09:00–17:00", "Tue: 09:00–17:00"] },
+      "phone": "+91-80-1234-5678",
+      "website": "https://citymuseum.example.org",
+      "rating": 4.7,
+      "userRatingsTotal": 2540,
+      "address": "12 Heritage Rd, Central City",
+      "location": { "lat": 12.9716, "lon": 77.5946 },
+      "mapLink": "https://www.google.com/maps/place/?q=place_id:place_abc123",
+      "types": ["tourist_attraction", "museum", "point_of_interest", "establishment"],
+      "priceLevel": null,
+      "thumbnail": "/api/place-photo?ref=PHOTO_MUSEUM_1&maxwidth=300",
+      "photosAvailable": true,
+      "photoCount": 1,
+      "source": "google_places"
+    }
+  ],
+  "food": [
+    {
+      "id": "place_def456",
+      "name": "Green Leaf Vegetarian",
+      "rawTypes": ["restaurant", "food", "point_of_interest", "establishment"],
+      "categoryKey": "restaurant",
+      "category": "Restaurant",
+      "opening_hours": { "open_now": false, "weekday_text": ["Mon: 11:00–22:00", "Tue: 11:00–22:00"] },
+      "phone": "+91-80-9876-5432",
+      "website": "https://greenleaf.example.com",
+      "rating": 4.3,
+      "userRatingsTotal": 820,
+      "address": "88 Food Street, Downtown",
+      "location": { "lat": 12.9750, "lon": 77.5990 },
+      "mapLink": "https://www.google.com/maps/place/?q=place_id:place_def456",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "priceLevel": 2,
+      "thumbnail": "/api/place-photo?ref=PHOTO_REST_1&maxwidth=300",
+      "photosAvailable": true,
+      "photoCount": 2,
+      "source": "google_places"
+    }
+  ],
+  "accommodation": [
+    {
+      "id": "place_ghi789",
+      "name": "Comfort Stay Hotel",
+      "rawTypes": ["lodging", "hotel", "point_of_interest", "establishment"],
+      "categoryKey": "hotel",
+      "category": "Hotel",
+      "opening_hours": null,
+      "phone": "+91-80-1122-3344",
+      "website": "https://comfortstay.example.com",
+      "rating": 4.1,
+      "userRatingsTotal": 420,
+      "address": "44 Stay Ave, Near Station",
+      "location": { "lat": 12.9690, "lon": 77.5900 },
+      "mapLink": "https://www.google.com/maps/place/?q=place_id:place_ghi789",
+      "types": ["lodging", "hotel", "point_of_interest", "establishment"],
+      "priceLevel": 3,
+      "thumbnail": "/api/place-photo?ref=PHOTO_HOTEL_1&maxwidth=300",
+      "photosAvailable": true,
+      "photoCount": 1,
+      "source": "google_places"
+    }
+  ]
+}
